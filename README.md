@@ -32,7 +32,7 @@ python tracker.py
 
 ## Usage
 
-1. **Start**: Run the script - camera initializes in 5 seconds
+1. **Start**: Run the script - camera initializes in 1 second
 2. **Select**: Click and drag to draw a bounding box around your target object
 3. **Confirm**: Press `ENTER` or `SPACE` to start tracking
 4. **Track**: Watch the blue bounding box follow your object
@@ -41,8 +41,8 @@ python tracker.py
 ## Implementation Details
 
 - Uses OpenCV's `VideoCapture` to access the webcam.
-- Initializes the KCF tracker with the selected ROI.
-- Uses OpenCV's `TrackerKCF_create` for accurate tracking.
+- Initializes the CSRT tracker with the selected ROI.
+- Uses OpenCV's `TrackerCSRT_create` for accurate tracking.
 - ROI selection uses `cv2.selectROI()`.
 - Displays real-time bounding box on live webcam feed.
 

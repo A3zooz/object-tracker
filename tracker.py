@@ -5,12 +5,12 @@ if __name__ == "__main__":
 
     cap = cv2.VideoCapture(0)
     ret, frame = cap.read()
-    cv2.waitKey(5000)
+    cv2.waitKey(1000)
     ret, frame = cap.read()
     cv2.imshow("Frame", frame)
     bounding_box = cv2.selectROI("Frame", frame, fromCenter=False, showCrosshair=True)
     cv2.destroyWindow("Frame")
-    tracker = cv2.TrackerKCF.create()
+    tracker = cv2.TrackerCSRT.create()
     tracker.init(frame, bounding_box)
     while True:
         ret, frame = cap.read()
