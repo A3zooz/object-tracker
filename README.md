@@ -43,6 +43,6 @@ python tracker.py
 ## Controls
 
 - **ENTER/SPACE**: Confirm selection
-- **ESC**: Cancel selection
+- **C**: Cancel selection
 - **q**: Quit application
 
