@@ -1,20 +1,14 @@
 # Object Tracker
 
-Real-time object tracking using OpenCV's KCF (Kernelized Correlation Filter) tracker. Select an object from your webcam and track it live with visual feedback.
+Real-time object tracking using OpenCV's CSRT tracker. Select an object from your webcam and track it live with visual feedback.
 
 ## Features
 
-- Real-time object tracking using KCF algorithm
+- Real-time object tracking using CSRT algorithm
 - Interactive ROI selection with mouse
 - Live webcam processing
 - Visual bounding box overlay
 - Tracking failure detection
-
-## Requirements
-
-- Python 3.6+
-- OpenCV with contrib modules
-- Webcam/camera device
 
 ## Installation
 
