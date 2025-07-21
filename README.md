@@ -40,6 +40,8 @@ python tracker.py
 
 ## Implementation Details
 
+- Uses OpenCV's `VideoCapture` to access the webcam.
+- Initializes the KCF tracker with the selected ROI.
 - Uses OpenCV's `TrackerKCF_create` for accurate tracking.
 - ROI selection uses `cv2.selectROI()`.
 - Displays real-time bounding box on live webcam feed.
